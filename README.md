@@ -1,7 +1,7 @@
 # Deployment To Cloud Foundry with App Metrics
 To deploy run the below and update your username, password and jdbc host, port, and database:
 ```sh
-cf create-service -c '{ "git": { "uri": "https://github.com/spring-petclinic/spring-petclinic-cloud-config.git", "periodic": true }, "count": 3 }' p.config-server standard config
+cf create-service -c '{ "git": { "uri": "https://github.com/btrieger/spring-petclinic-cloud-config.git", "periodic": true }, "count": 3 }' p.config-server standard config
 cf create-service p.service-registry standard registry 
 cf create-service credhub default customers-db -c "{\"jdbcUrl\":\"jdbc:mysql://<HOST>:<PORT>/<DB>\",\"username\":\"<USERNAME>\",\"password\":\"<PASSWORD>\" }"
 cf create-service credhub default visits-db -c "{\"jdbcUrl\":\"jdbc:mysql://<HOST>:<PORT>/<DB>\",\"username\":\"<USERNAME>\",\"password\":\"<PASSWORD>\" }"
