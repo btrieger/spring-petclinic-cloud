@@ -1,0 +1,17 @@
+---
+apiVersion: indicatorprotocol.io/v1
+kind: IndicatorDocument
+
+spec:
+  product:
+   name: system,system,customers-service
+   version: 0.0.1
+
+  indicators:
+   - name: "PetclinicOwnerTimer"
+     promql: "sum(petclinic_owner_seconds_count{method=\"POST\", status=\"201\", source_id=\"$sourceId\"})"
+     documentation:
+      title: "Petclinic Owner Timer"
+     presentation:
+      units: "counts"
+            
