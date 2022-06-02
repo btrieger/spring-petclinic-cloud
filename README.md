@@ -47,3 +47,5 @@ Run below command to apply:
 ```sh
 curl -vvv https://metrics.sys.latest-pas.pci.cf-app.com/indicator-documents -H "Authorization: $(cf oauth-token)" --data-binary "@indicators.yml"
 ```
+
+To run a jmeter load test use the file here: [petclinic_test_plan](spring-petclinic-api-gateway/src/test/jmeter/petclinic_test_plan.jmx) and simply edit the PETCLINIC_HOST on line 13.
