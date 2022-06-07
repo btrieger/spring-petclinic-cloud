@@ -16,4 +16,3 @@ applications:
       - vets-db
       - config
       - registry
-      - wavefront
