@@ -16,4 +16,3 @@ applications:
       - visits-db
       - config
       - registry
-      - wavefront
